@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Store | ElectroGlow</title>
+  <link rel="stylesheet" href="css/products.css" />
+</head>
+<body>
+  <header class="header fade-item">
+    <div class="logo">My market</div>
+    <nav class="nav">
+      <a href="index.html">Home</a>
+      <a href="products.html" class="active">Products</a>
+      <a href="cart.html">🛒 Cart <span class="cart-count">0</span></a>
+      <a href="#">Contact Us</a>
+    </nav>
+  </header>
+  <section class="search-section fade-item">
+    <input type="text" id="searchBox" placeholder="Search for a category or product..." />
+    <button id="filterBtn">Filter 🔍</button>
+  </section>
+  
+  <section class="products fade-item">
+    <!-- إلكترونيات -->
+    <div class="category" data-category="الكترونيات">
+      <h2>📱 Electronics</h2>
+      <div class="cards">
+        <div class="card electric-blue" data-id="phone-1" data-price="160">
+          <img src="images/electronics/phone.jpg" alt="هاتف ذكي" class="product-image">
+          <h3>Smartphone <span class="price">$160</span></h3>
+          <p>Fast performance and professional camera</p>
+          <button class="cart-btn">Add to Cart</button>
+        </div>
+        <div class="card electric-cyan" data-id="headphones-1" data-price="12">
+          <img src="images/electronics/headphones.jpeg" alt="سماعات لاسلكية" class="product-image">
+          <h3>Wireless Headphones <span class="price">$12</span></h3>
+          <p>Pure sound and complete comfort</p>
+          <button class="cart-btn">Add to Cart</button>
+        </div>
+        <div class="card electric-pink" data-id="watch-1" data-price="10">
+          <img src="images/electronics/smartwatch.jpg" alt="ساعة ذكية" class="product-image">
+          <h3>Smart Watch <span class="price">$10</span></h3>
+          <p>Accurate health activity tracking</p>
+          <button class="cart-btn">Add to Cart</button>
+        </div>
+        <div class="card electric-purple" data-id="tablet-1" data-price="300">
+          <img src="images/electronics/laptop.jpg" alt="لاب حديث" class="product-image">
+          <h3>Modern Laptop <span class="price">$300</span></h3>
+          <p>High-resolution display and powerful processor</p>
+          <button class="cart-btn">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- ملابس -->
+    <div class="category" data-category="ملابس">
+      <h2>👕 Clothing</h2>
+      <div class="cards">
+        <div class="card electric-pink" data-id="clothes-1" data-price="15">
+          <img src="images/الالكترونيات/جاكيت.jpeg" alt="جاكيت شتوي" class="product-image">
+          <h3>Winter Jacket <span class="price">$15</span></h3>
+          <p>Luxurious and warm design</p>
+          <button class="cart-btn">Add to Cart</button>
+        </div>
+        <div class="card electric-purple" data-id="clothes-2" data-price="5">
+          <img src="images/الالكترونيات/tishrt.jpeg" alt="تيشيرت شبابي" class="product-image">
+          <h3>Men's T-Shirt <span class="price">$5</span></h3>
+          <p>Comfortable and stylish</p>
+          <button class="cart-btn">Add to Cart</button>
+        </div>
+        <div class="card electric-blue" data-id="clothes-3" data-price="10">
+          <img src="images/الالكترونيات/بنطلون.jpeg" alt="جينز رجالي" class="product-image">
+          <h3>Men's Jeans <span class="price">$10</span></h3>
+          <p>Excellent and comfortable material</p>
+          <button class="cart-btn">Add to Cart</button>
+        </div>
+        <div class="card electric-gold" data-id="clothes-4" data-price="9.5">
+          <img src="images/الالكترونيات/فستان.jpeg" alt=" فستان" class="product-image">
+          <h3>Women's Dress <span class="price">$9.50</span></h3>
+          <p>Light and warm with a unique design</p>
+          <button class="cart-btn">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- تورت -->
+    <div class="category" data-category="تورت">
+      <h2>🎂 Cakes & Sweets</h2>
+      <div class="cards">
+        <div class="card electric-gold" data-id="cake-1" data-price="8.5">
+          <img src="images/products/cakes/download (13).jpg" alt="تورتة شوكولاتة" class="product-image">
+          <h3>Chocolate Cake <span class="price">$8.50</span></h3>
+          <p>Irresistible taste</p>
+          <button class="cart-btn">Add to Cart</button>
+        </div>
+        <div class="card electric-pink" data-id="cake-2" data-price="9.5">
+          <img src="images/products/cakes/download (14).jpg" alt="تورتة شوكولاته اوريو" class="product-image">
+          <h3>Oreo Chocolate Cake <span class="price">$9.50</span></h3>
+          <p>Indescribable taste</p>
+          <button class="cart-btn">Add to Cart</button>
+        </div>
+        <div class="card electric-violet" data-id="cake-3" data-price="1">
+          <img src="images/products/cakes/images (20).jpg" alt="كب كيك" class="product-image">
+          <h3>Cupcake <span class="price">$1</span></h3>
+          <p>Attractive and delicious</p>
+          <button class="cart-btn">Add to Cart</button>
+        </div>
+        <div class="card electric-cyan" data-id="cake-4" data-price="6.5">
+          <img src="images/products/cakes/images (19).jpg" alt="تورته فانليا" class="product-image">
+          <h3>Vanilla Cake <span class="price">$6.50</span></h3>
+          <p>Affordable price and distinctive taste</p>
+          <button class="cart-btn">Add to Cart</button>
+        </div>
+        <div class="card electric-gold" data-id="cake-5" data-price="5.5">
+          <img src="images/products/cakes/images (18).jpg" alt="تورتة شوكولاتة" class="product-image">
+          <h3>Assorted Sweets<span class="price">$5.50</span></h3>
+          <p>Perfect shape and taste</p>
+          <button class="cart-btn">Add to Cart</button>
+        </div>
+        <div class="card electric-pink" data-id="cake-6" data-price="2.5">
+          <img src="images/الالكترونيات/download.avif" alt="تورتة شوكولاته اوريو" class="product-image">
+          <h3>Chocolate Box <span class="price">$2.50</span></h3>
+          <p>Delicious chocolate</p>
+          <button class="cart-btn">Add to Cart</button>
+        </div>
+        <div class="card electric-violet" data-id="cake-7" data-price="1">
+          <img src="images/products/cakes/download (12).jpg" alt="جاتو شيكولاته " class="product-image">
+          <h3>Chocolate Gateau <span class="price">$1</span></h3>
+          <p>Attractive and delicious</p>
+          <button class="cart-btn">Add to Cart</button>
+        </div>
+        <div class="card electric-cyan" data-id="cake-8" data-price="6.5">
+          <img src="images/products/sweets/download (17).jpg" alt="مناسبات " class="product-image">
+          <h3>Special Occasion Sweets <span class="price">$6.50</span></h3>
+          <p>World-class prices and distinctive taste</p>
+          <button class="cart-btn">Add to Cart</button>
+        </div>
+        
+      </div>
+    </div>
+
+    <!-- فواكه -->
+    <div class="category" data-category="فواكه">
+      <h2>🍓 Fresh Fruits</h2>
+      <div class="cards">
+        <div class="card electric-green" data-id="fruits-1" data-price="2">
+          <img src="images/products/fruits/download.jpeg" alt="فواكه طازجة" class="product-image">
+          <h3>Mixed Berries <span class="price">$2/kg</span></h3>
+          <p>Natural and healthy</p>
+          <button class="cart-btn">Add to Cart</button>
+        </div>
+        <div class="card electric-pink" data-id="fruits-2" data-price="1.3">
+          <img src="images/products/fruits/images (13).jpg" alt="فراولة" class="product-image">
+          <h3>Strawberries <span class="price">$1.30/kg</span></h3>
+          <p>Fresh and carefully selected</p>
+          <button class="cart-btn">Add to Cart</button>
+        </div>
+        <div class="card electric-violet" data-id="fruits-3" data-price="1.6">
+          <img src="images/products/fruits/download.jpg" alt="مانجا صفراء" class="product-image">
+          <h3>Yellow Mango<span class="price">$1.60/kg</span></h3>
+          <p>Attractive and delicious</p>
+          <button class="cart-btn">Add to Cart</button>
+        </div>
+        <div class="card electric-blue" data-id="fruits-4" data-price="35">
+          <img src="images/products/fruits/download (3).jpg" alt="تفاح أحمر" class="product-image">
+          <h3>Red Apple <span class="price">$1.20/kg</span></h3>
+          <p>Rich in vitamins and delicious</p>
+          <button class="cart-btn">Add to Cart</button>
+        </div>
+        <div class="card electric-green" data-id="fruits-1" data-price="60">
+          <img src="images/الالكترونيات/download.jpeg" alt="فواكه طازجة" class="product-image">
+          <h3>Local Bananas <span class="price">$2/kg</span></h3>
+          <p>Natural and healthy</p>
+          <button class="cart-btn">Add to Cart</button>
+        </div>
+        <div class="card electric-pink" data-id="fruits-2" data-price="100">
+          <img src="images/products/fruits/images (15).jpg" alt="افوكادو" class="product-image">
+          <h3>Avocado<span class="price">$3.30/kg</span></h3>
+          <p>Fresh and carefully selected</p>
+          <button class="cart-btn">Add to Cart</button>
+        </div>
+        <div class="card electric-violet" data-id="cake-3" data-price="30">
+          <img src="images/products/fruits/images (14).jpg" alt="بطيخ" class="product-image">
+          <h3>Watermelon <span class="price">$1</span></h3>
+          <p>Delicious and beautiful</p>
+          <button class="cart-btn">Add to Cart</button>
+        </div>
+        <div class="card electric-blue" data-id="fruits-4" data-price="56">
+          <img src="images/products/fruits/download (4).jpg" alt="كيوى" class="product-image">
+          <h3>Kiwi<span class="price">$1.80/kg</span></h3>
+          <p>Unparalleled taste</p>
+          <button class="cart-btn">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- غذاء أساسي -->
+  <section class="category fade-item" data-category="غذاء">
+    <h2>🍚 Groceries</h2>
+    <div class="cards">
+      <div class="card electric-gold" data-id="rice-1" data-price="30">
+        <img src="images/غذاء/images (16).jpg" alt="أرز مصري" class="product-image">
+        <h3>Egyptian Rice <span class="price">$1/kg</span></h3>
+        <p>High-quality white rice</p>
+        <button class="cart-btn">Add to Cart</button>
+      </div>
+      <div class="card electric-green" data-id="pasta-1" data-price="20">
+        <img src="images/غذاء/download (5).jpg" alt="مكرونة" class="product-image">
+        <h3>Pasta <span class="price">$0.70/kg</span></h3>
+        <p>Spaghetti and lasagna pasta</p>
+        <button class="cart-btn">Add to Cart</button>
+      </div>
+      <div class="card electric-blue" data-id="oil-1" data-price="45">
+        <img src="images/غذاء/images (7).jpg" alt="زيت طهي" class="product-image">
+        <h3>Cooking Oil <span class="price">$1.50/liter</span></h3>
+        <p>Healthy vegetable oil</p>
+        <button class="cart-btn">Add to Cart</button>
+      </div>
+      <div class="card electric-pink" data-id="sugar-1" data-price="25">
+        <img src="images/الالكترونيات/سكر.jpeg" alt="سكر أبيض" class="product-image">
+        <h3>White Sugar <span class="price">$0.80/kg</span></h3>
+        <p>High-quality fine sugar</p>
+        <button class="cart-btn">Add to Cart</button>
+      </div>
+      <div class="card electric-purple" data-id="flour-1" data-price="18">
+        <img src="images/الالكترونيات/دقيق.jpeg" alt="دقيق أبيض" class="product-image">
+        <h3>White Flour <span class="price">$0.60/kg</span></h3>
+        <p>Premium flour for baking</p>
+        <button class="cart-btn">Add to Cart</button>
+      </div>
+      <div class="card electric-cyan" data-id="lentils-1" data-price="35">
+        <img src="images/غذاء/images (3).jpg" alt=" عسل أبيض" class="product-image">
+        <h3>White Honey <span class="price">$1.20/kg</span></h3>
+        <p>Finest quality honey for you</p>
+        <button class="cart-btn">Add to Cart</button>
+      </div>
+      <div class="card electric-gold" data-id="beans-1" data-price="40">
+        <img src="images/الالكترونيات/فول.jpeg" alt="فول" class="product-image">
+        <h3>Fava Beans <span class="price">$1.30/kg</span></h3>
+        <p>Healthy and protein-rich beans</p>
+        <button class="cart-btn">Add to Cart</button>
+      </div>
+      <div class="card electric-pink" data-id="salt-1" data-price="5">
+        <img src="images/الالكترونيات/ملح.jpeg" alt="ملح طعام" class="product-image">
+        <h3>Table Salt <span class="price">$0.20/kg</span></h3>
+        <p>Fine refined salt</p>
+        <button class="cart-btn">Add to Cart</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- عصائر -->
+  <section class="category fade-item" data-category="عصائر">
+    <h2>🥤 Fresh Juices</h2>
+    <div class="cards">
+      <div class="card electric-cyan" data-id="juice-1" data-price="25">
+        <img src="images/products/juices/download (1).jpg" alt="عصير جهينه" class="product-image">
+        <h3>Fresh Orange Juice <span class="price">$0.80/liter</span></h3>
+        <p>100% Fresh</p>
+        <button class="cart-btn">Add to Cart</button>
+      </div>
+      <div class="card electric-pink" data-id="juice-2" data-price="30">
+        <img src="images/products/juices/download (8).jpg" alt=" كنز" class="product-image">
+        <h3>Mixed Fruit Juice <span class="price">$1</span></h3>
+        <p>Refreshing and sweet taste</p>
+        <button class="cart-btn">Add to Cart</button>
+      </div>
+      <div class="card electric-gold" data-id="juice-3" data-price="35">
+        <img src="images/products/juices/images.jpeg" alt="عصير مانجو" class="product-image">
+        <h3>Mango Juice <span class="price">$1.20/liter</span></h3>
+        <p>Exotic tropical flavor</p>
+        <button class="cart-btn">Add to Cart</button>
+      </div>
+      <div class="card electric-purple" data-id="juice-4" data-price="28">
+        <img src="images/products/juices/images (11).jpg" alt="عصير جاهز للسفر" class="product-image">
+        <h3>Ready-to-Drink Juice <span class="price">$0.90/liter</span></h3>
+        <p>Refreshing and delicious</p>
+        <button class="cart-btn">Add to Cart</button>
+      </div>
+      <div class="card electric-pink" data-id="juice-5" data-price="32">
+        <img src="images/products/juices/عصير بطيخ.jpeg" alt="عصير بطيخ" class="product-image">
+        <h3>Watermelon Juice <span class="price">$1.10/liter</span></h3>
+        <p>Summer hydrating drink</p>
+        <button class="cart-btn">Add to Cart</button>
+      </div>
+      <div class="card electric-purple" data-id="juice-6" data-price="40">
+        <img src="images/products/juices/download.jpeg" alt="عصير أفوكادو" class="product-image">
+        <h3>Avocado Juice <span class="price">$1.30/liter</span></h3>
+        <p>Healthy and nutritious</p>
+        <button class="cart-btn">Add to Cart</button>
+      </div>
+      <div class="card electric-blue" data-id="juice-7" data-price="27">
+        <img src="images/products/juices/download.webp" alt="ليمون بالنعناع" class="product-image">
+        <h3>Lemon Mint Juice <span class="price">$0.90/liter</span></h3>
+        <p>Refreshing and cool</p>
+        <button class="cart-btn">Add to Cart</button>
+      </div>
+      <div class="card electric-cyan" data-id="juice-8" data-price="45">
+        <img src="images/products/juices/images (17).jpg" alt="مشروبات الطاقة" class="product-image">
+        <h3>Energy Drinks <span class="price">$1.50/can</span></h3>
+        <p>Energy and vitality</p>
+        <button class="cart-btn">Add to Cart</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- عطور -->
+  <section class="category fade-item" data-category="عطور">
+    <h2>🌸 Perfumes</h2>
+    <div class="cards">
+      <div class="card electric-purple" data-id="perfume-1" data-price="350">
+        <img src="images/products/perfumes/download (1).jpg" alt="عطر جولدن سينسايشن" class="product-image">
+        <h3>Golden Sensation <span class="price">$12</span></h3>
+        <p>Attractive women's perfume</p>
+        <button class="cart-btn">Add to Cart</button>
+      </div>
+      <div class="card electric-blue" data-id="perfume-2" data-price="400">
+        <img src="images/products/perfumes/download (2).jpg" alt="عطر بلاك أوبيوم" class="product-image">
+        <h3>Black Opium <span class="price">$13.50</span></h3>
+        <p>Luxury women's perfume</p>
+        <button class="cart-btn">Add to Cart</button>
+      </div>
+      <div class="card electric-gold" data-id="perfume-3" data-price="380">
+        <img src="images/products/perfumes/download.jpg" alt="عطر سوفاج" class="product-image">
+        <h3>Sauvage <span class="price">$12.50</span></h3>
+        <p>Strong men's cologne</p>
+        <button class="cart-btn">Add to Cart</button>
+      </div>
+      <div class="card electric-pink" data-id="perfume-4" data-price="420">
+        <img src="images/الالكترونيات/عطر.webp" alt="عطر شانيل" class="product-image">
+        <h3>Chanel Perfume <span class="price">$14</span></h3>
+        <p>Classic and elegant</p>
+        <button class="cart-btn">Add to Cart</button>
+      </div>
+    </div>
+  </section>
+
+  <div id="noResults">❌ No matching results found.</div>
+
+  <!-- Add cart feedback styles -->
+  <style>
+    /* Cart Feedback Notification */
+    .cart-feedback {
+      position: fixed;
+      bottom: 30px;
+      left: 50%;
+      transform: translateX(-50%) translateY(100px);
+      background: rgba(0, 0, 0, 0.8);
+      backdrop-filter: blur(10px);
+      color: #fff;
+      padding: 15px 30px;
+      border-radius: 50px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+      z-index: 1000;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      opacity: 0;
+      transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    }
+
+    .cart-feedback::before {
+      content: '✓';
+      background: #4CAF50;
+      width: 24px;
+      height: 24px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+    }
+
+    .cart-feedback.show {
+      transform: translateX(-50%) translateY(0);
+      opacity: 1;
+    }
+
+    /* Cart count in header */
+    .cart-count {
+      background: #7b68ee;
+      color: white;
+      border-radius: 50%;
+      width: 20px;
+      height: 20px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.7rem;
+      margin-right: 5px;
+      display: none;
+    }
+  </style>
+
+  <script src="js/products.js"></script>
+  <script src="js/cart.js"></script>
+  <script>
+    // Function to show feedback when adding to cart
+    function showAddToCartFeedback(productName) {
+      const feedback = document.createElement('div');
+      feedback.className = 'cart-feedback';
+      feedback.innerHTML = `
+        <span class="tick">✓</span>
+        Added ${productName} to cart
+      `;
+      document.body.appendChild(feedback);
+      
+      // Trigger reflow
+      void feedback.offsetWidth;
+      
+      // Show feedback
+      feedback.classList.add('show');
+      
+      // Hide after 2 seconds
+      setTimeout(() => {
+        feedback.classList.remove('show');
+        setTimeout(() => feedback.remove(), 300);
+      }, 2000);
+    }
+
+    // Update cart count on all pages
+    function updateCartCount() {
+      const cart = JSON.parse(localStorage.getItem('cart') || '[]');
+      const count = cart.reduce((total, item) => total + (item.quantity || 0), 0);
+      document.querySelectorAll('.cart-count').forEach(el => {
+        el.textContent = count;
+        el.style.display = count > 0 ? 'inline-flex' : 'none';
+      });
+    }
+
+    // Function to add item to cart
+    function addToCart(product) {
+      // Ensure price is a valid number
+      const price = parseFloat(product.price) || 0;
+      if (isNaN(price)) {
+        console.error('Invalid price for product:', product);
+        return;
+      }
+
+      let cart = JSON.parse(localStorage.getItem('cart') || '[]');
+      
+      // Check if product already exists in cart
+      const existingItemIndex = cart.findIndex(item => item.id === product.id);
+      
+      if (existingItemIndex >= 0) {
+        // Update quantity if item exists
+        cart[existingItemIndex].quantity = (parseInt(cart[existingItemIndex].quantity) || 0) + 1;
+      } else {
+        // Add new item to cart
+        cart.push({
+          id: product.id,
+          name: product.name,
+          price: price,
+          image: product.image,
+          quantity: 1
+        });
+      }
+      
+      // Save to localStorage
+      localStorage.setItem('cart', JSON.stringify(cart));
+      
+      // Show feedback
+      showAddToCartFeedback(product.name);
+      
+      // Update cart count in header
+      updateCartCount();
+      
+      // If we're on the cart page, refresh the cart display
+      if (typeof window.renderCart === 'function') {
+        window.renderCart();
+      }
+      
+      return cart;
+    }
+
+    // Initialize cart functionality for the products page
+    document.addEventListener('DOMContentLoaded', function() {
+      // Add click event to all add to cart buttons
+      document.addEventListener('click', function(e) {
+        if (e.target.classList.contains('cart-btn')) {
+          e.preventDefault();
+          const card = e.target.closest('.card');
+          const price = parseFloat(card.dataset.price);
+          
+          if (isNaN(price)) {
+            console.error('Invalid price for product:', card);
+            return;
+          }
+          
+          // Get the image element and its source
+          const imgElement = card.querySelector('img');
+          let imagePath = imgElement.getAttribute('src');
+          
+          // If the image is using a placeholder, try to get the data-src attribute if it exists
+          if (imagePath.includes('placeholder.svg') && imgElement.hasAttribute('data-src')) {
+            imagePath = imgElement.getAttribute('data-src');
+          }
+          
+          // Create a relative path if it's a full URL
+          if (imagePath.startsWith('http') || imagePath.startsWith('file://')) {
+            const url = new URL(imagePath, window.location.href);
+            imagePath = url.pathname.split('/').pop();
+            // Ensure the path is relative to the images folder
+            if (!imagePath.startsWith('images/')) {
+              imagePath = 'images/' + imagePath;
+            }
+          }
+          
+          // Clean up the product name (remove price if it exists)
+          const nameElement = card.querySelector('h3');
+          let productName = nameElement.textContent.trim();
+          const priceSpan = nameElement.querySelector('.price');
+          if (priceSpan) {
+            productName = nameElement.textContent.replace(priceSpan.outerHTML, '').trim();
+          }
+          
+          const product = {
+            id: card.dataset.id || Date.now().toString(),
+            name: productName,
+            price: price,
+            image: imagePath
+          };
+          
+          console.log('Adding to cart:', product);
+          addToCart(product);
+        }
+      });
+      
+      // Initialize cart count on page load
+      updateCartCount();
+    });
+
+    // Make addToCart available globally
+    window.addToCart = addToCart;
+  </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+

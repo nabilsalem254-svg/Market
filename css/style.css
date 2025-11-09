@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Cairo', sans-serif;
+}
+
+body {
+  background: radial-gradient(circle at top, #0a001a, #000);
+  color: #fff;
+  overflow-x: hidden;
+}
+
+/* ===== Header ===== */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 60px;
+  background: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+  backdrop-filter: blur(8px);
+}
+
+.logo {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #6a5acd;
+  text-shadow: 0 0 10px #6a5acd, 0 0 20px #00ffff;
+}
+
+.nav a {
+  color: #fff;
+  margin: 0 15px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.nav a:hover {
+  color: #00ffff;
+  text-shadow: 0 0 10px #00ffff;
+}
+
+/* ===== Hero Section ===== */
+.hero {
+  height: 100vh;
+  background: linear-gradient(120deg, rgba(0,0,50,0.9), rgba(30,0,50,0.9)), 
+              url('https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=1000&q=80') 
+              center/cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 100px 20px;
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  color: #00ffff;
+  text-shadow: 0 0 15px #00ffff, 0 0 25px #6a5acd;
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  color: #ccc;
+  margin: 15px 0 25px;
+}
+
+.neon-btn {
+  background: none;
+  border: 2px solid #00ffff;
+  padding: 12px 30px;
+  color: #00ffff;
+  font-size: 1rem;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: 0.3s;
+  text-transform: uppercase;
+}
+
+.neon-btn:hover {
+  background: #00ffff;
+  color: #000;
+  box-shadow: 0 0 25px #00ffff, 0 0 50px #6a5acd;
+  transform: scale(1.08);
+}
+
+/* ===== Products Section ===== */
+.products {
+  padding: 100px 60px;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 2rem;
+  margin-bottom: 40px;
+  color: #6a5acd;
+  text-shadow: 0 0 15px #6a5acd, 0 0 25px #00ffff;
+}
+
+.cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+/* ===== Neon Electric Card ===== */
+.card {
+  position: relative;
+  background: rgba(255, 255, 255, 0.05);
+  width: 280px;
+  border-radius: 20px;
+  padding: 20px;
+  overflow: hidden;
+  transition: 0.4s;
+  box-shadow: 0 0 15px rgba(0,255,255,0.2);
+}
+
+.card::before, .card::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 20px;
+  padding: 2px;
+  background: linear-gradient(45deg, #00ffff, #6a5acd, #00ffff, #6a5acd);
+  background-size: 300% 300%;
+  animation: electricFlow 2s linear infinite;
+  -webkit-mask:
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask:
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
+  mask-composite: exclude;
+  z-index: 1;
+}
+
+@keyframes electricFlow {
+  0% { background-position: 0% 50%; filter: brightness(1); }
+  50% { background-position: 100% 50%; filter: brightness(2); }
+  100% { background-position: 0% 50%; filter: brightness(1); }
+}
+
+/* ===== Strong Spark Effect on Hover ===== */
+.card:hover::after {
+  box-shadow:
+    0 0 25px #00ffff,
+    0 0 60px #00ffff,
+    0 0 90px #6a5acd,
+    inset 0 0 45px #00ffff;
+  filter: brightness(2);
+}
+
+/* ===== Product Image ===== */
+.card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 15px;
+  margin-bottom: 15px;
+  box-shadow: 0 0 25px rgba(0,255,255,0.4);
+  z-index: 2;
+  position: relative;
+}
+
+/* ===== Product Info ===== */
+.card h3 {
+  margin: 10px 0 8px;
+  color: #00ffff;
+  text-shadow: 0 0 10px #00ffff, 0 0 15px #6a5acd;
+  position: relative;
+  z-index: 2;
+}
+
+.card p {
+  color: #ccc;
+  font-size: 0.95rem;
+  min-height: 50px;
+  position: relative;
+  z-index: 2;
+}
+
+/* ===== Card Hover Motion ===== */
+.card:hover {
+  transform: translateY(-12px) scale(1.05);
+  box-shadow: 0 0 35px #00ffff, 0 0 65px #6a5acd;
+}
+
+/* ===== Card Button ===== */
+.card button {
+  margin-top: 10px;
+  background: none;
+  border: 2px solid #6a5acd;
+  color: #6a5acd;
+  padding: 10px 20px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: 0.4s;
+  z-index: 2;
+  position: relative;
+}
+
+/* ===== Hover Button Glow ===== */
+.card button:hover {
+  background: linear-gradient(90deg, #6a5acd, #00ffff);
+  color: #000;
+  box-shadow: 0 0 25px #00ffff, 0 0 45px #6a5acd;
+  transform: scale(1.08);
+}
+
+/* ===== Fade Animation ===== */
+.fade-item {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.fade-item.show {
+  opacity: 1;
+  transform: translateY(0);
+}
